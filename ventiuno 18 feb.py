@@ -30,9 +30,18 @@ class Mazo:
         for c in self.cartas:
             valor += c.dar_valor()
         return valor   
+    
+    def dar_carta(self):
+        return self.cartas.pop()
+    
+    def agregar_carta(self, carta):
+        self.cartas.append(carta)
 
 if __name__ =='__main__':
     m = Mazo();
-    for c in  m.cartas:
+    j = Mazo(True)
+    j.cartas.append(m.dar_carta())
+    j.cartas.append(m.dar_carta())
+    for c in  j.cartas:
         print (c.mostrar())
-    print(m.dar_valor())
+    print(j.dar_valor())
