@@ -11,7 +11,7 @@ class Carta:
         return int(self.valor)
 
     def mostrar(self):
-        return self.valor + "de" + self.pinta
+        return self.valor + " de " + self.pinta
     
 
 
@@ -22,7 +22,7 @@ class Mazo:
             self.cartas = []
         else: 
             self.cartas = [Carta (v,p) 
-                           for v in ['A','J','Q','K',] + str(x) for x in range (2,11) 
+                           for v in ['A','J','Q','K',] + [str(x) for x in range (2,11)] 
                            for p in ['picas','treboles','corazones','diamantes',]]
                  
     def dar_valor(self):  
