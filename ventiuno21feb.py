@@ -58,7 +58,7 @@ if __name__ =='__main__':
     j = Mazo(True)
     j.agregar_carta(m.dar_carta())
     j.agregar_carta(m.dar_carta())
-    j.agregar_carta(Carta("A", "picas"))
+    #j.agregar_carta(Carta("A", "picas"))
     j.mostrar_cartas()
     print(j.dar_valor())
 
